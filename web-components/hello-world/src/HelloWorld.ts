@@ -9,13 +9,11 @@ export class HelloWorld extends LitElement {
       color: var(--hello-world-text-color, #000);
     }
     button {
-      background-color: red;
-      padding: 5px 10px;
+      background-color: lime;
       border-style: none;
       border-radius: 5px;
-    }
-    button:active {
-      background-color: red;
+      padding: 5px 10px;
+      cursor: pointer;
     }
   `;
 

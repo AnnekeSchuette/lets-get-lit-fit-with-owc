@@ -18,7 +18,7 @@
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\""
   },
   "dependencies": {
-    "hello-world": "file:../hello-world",
+    "hello-world": "file:../web-components/hello-world",
     "lit": "^2.0.2"
   },
   "devDependencies": {

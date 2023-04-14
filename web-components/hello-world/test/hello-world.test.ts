@@ -19,7 +19,9 @@ describe('HelloWorld', () => {
   });
 
   it('can override the header via attribute', async () => {
-    const el = await fixture<HelloWorld>(html`<hello-world header="attribute header"></hello-world>`);
+    const el = await fixture<HelloWorld>(
+      html`<hello-world header="attribute header"></hello-world>`
+    );
 
     expect(el.header).to.equal('attribute header');
   });
