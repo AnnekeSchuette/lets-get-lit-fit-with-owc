@@ -1,15 +1,19 @@
 import { LitElement, html, css } from 'lit';
 import { property, customElement } from 'lit/decorators.js';
-
 import 'hello-world/hello-world.js';
+import pikachuVowel from '@annekeschuette/ds-wc-pokemon-card';
 
 const logo = new URL('../../assets/open-wc-logo.svg', import.meta.url).href;
+
+
+const test = () => pikachuVowel();
 
 @customElement('legit-lit-app')
 export class LegitLitApp extends LitElement {
   @property({ type: String }) header = 'My app';
 
   @property({ type: String }) titleText = 'jojojo';
+
 
   static styles = css`
     :host {
@@ -55,10 +59,11 @@ export class LegitLitApp extends LitElement {
   `;
 
   render() {
+
     return html`
       <main>
         <div class="logo"><img alt="open-wc logo" src=${logo} /></div>
-        <h1>${this.header}</h1>
+        <h1>${this.header} ${test}</h1>
 
         <p>Edit <code>src/LegitLitApp.ts</code> and save to reload.</p>
         <a
